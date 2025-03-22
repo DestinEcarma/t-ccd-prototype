@@ -1,0 +1,15 @@
+[project]
+name = "t-ccd-prototype"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Destin Ecarma", email = "109215379+DestinEcarma@users.noreply.github.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
