@@ -1,3 +1,3 @@
-# t-ccd-prototype
+# T-CCD Prototype
 
-Describe your project here.
+A thesis project
