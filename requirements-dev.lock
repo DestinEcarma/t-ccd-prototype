@@ -25,9 +25,14 @@ async-lru==2.0.5
 attrs==25.3.0
     # via jsonschema
     # via referencing
+audioop-lts==0.2.1
+    # via manim
+av==13.1.0
+    # via manim
 babel==2.17.0
     # via jupyterlab-server
 beautifulsoup4==4.13.3
+    # via manim
     # via nbconvert
 bleach==6.2.0
     # via nbconvert
@@ -39,6 +44,11 @@ cffi==1.17.1
     # via argon2-cffi-bindings
 charset-normalizer==3.4.1
     # via requests
+click==8.1.8
+    # via cloup
+    # via manim
+cloup==3.0.7
+    # via manim
 comm==0.2.2
     # via ipykernel
 contourpy==1.3.1
@@ -49,6 +59,7 @@ debugpy==1.8.13
     # via ipykernel
 decorator==5.2.1
     # via ipython
+    # via manim
 defusedxml==0.7.1
     # via nbconvert
 executing==2.2.0
@@ -59,6 +70,8 @@ fonttools==4.56.0
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
+glcontext==3.0.0
+    # via moderngl
 h11==0.14.0
     # via httpcore
 httpcore==1.0.7
@@ -78,6 +91,8 @@ ipython-pygments-lexers==1.1.1
     # via ipython
 isoduration==20.11.0
     # via jsonschema
+isosurfaces==0.1.2
+    # via manim
 jedi==0.19.2
     # via ipython
 jinja2==3.1.6
@@ -128,6 +143,13 @@ jupyterlab-server==2.27.3
     # via notebook
 kiwisolver==1.4.8
     # via matplotlib
+manim==0.19.0
+manimpango==0.6.0
+    # via manim
+mapbox-earcut==1.0.3
+    # via manim
+markdown-it-py==3.0.0
+    # via rich
 markupsafe==3.0.2
     # via jinja2
     # via nbconvert
@@ -135,8 +157,15 @@ matplotlib==3.10.1
 matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
+mdurl==0.1.2
+    # via markdown-it-py
 mistune==3.1.3
     # via nbconvert
+moderngl==5.12.0
+    # via manim
+    # via moderngl-window
+moderngl-window==3.1.1
+    # via manim
 nbclient==0.10.2
     # via nbconvert
 nbconvert==7.16.6
@@ -147,13 +176,20 @@ nbformat==5.10.4
     # via nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
+networkx==3.4.2
+    # via manim
 notebook==7.3.3
 notebook-shim==0.2.4
     # via jupyterlab
     # via notebook
 numpy==2.2.4
     # via contourpy
+    # via isosurfaces
+    # via manim
+    # via mapbox-earcut
     # via matplotlib
+    # via moderngl-window
+    # via scipy
 overrides==7.7.0
     # via jupyter-server
 packaging==24.2
@@ -171,7 +207,9 @@ parso==0.8.4
 pexpect==4.9.0
     # via ipython
 pillow==11.1.0
+    # via manim
     # via matplotlib
+    # via moderngl-window
 platformdirs==4.3.7
     # via jupyter-core
 prometheus-client==0.21.1
@@ -185,12 +223,22 @@ ptyprocess==0.7.0
     # via terminado
 pure-eval==0.2.3
     # via stack-data
+pycairo==1.28.0
+    # via manim
 pycparser==2.22
     # via cffi
+pydub==0.25.1
+    # via manim
+pyglet==2.1.6
+    # via moderngl-window
+pyglm==2.8.2
+    # via moderngl-window
 pygments==2.19.1
     # via ipython
     # via ipython-pygments-lexers
+    # via manim
     # via nbconvert
+    # via rich
 pyparsing==3.2.1
     # via matplotlib
 python-dateutil==2.9.0.post0
@@ -217,9 +265,15 @@ rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
     # via jsonschema
     # via jupyter-events
+rich==14.0.0
+    # via manim
 rpds-py==0.23.1
     # via jsonschema
     # via referencing
+scipy==1.15.2
+    # via manim
+screeninfo==0.8.1
+    # via manim
 send2trash==1.8.3
     # via jupyter-server
 setuptools==77.0.3
@@ -227,12 +281,18 @@ setuptools==77.0.3
 six==1.17.0
     # via python-dateutil
     # via rfc3339-validator
+skia-pathops==0.8.0.post2
+    # via manim
 sniffio==1.3.1
     # via anyio
 soupsieve==2.6
     # via beautifulsoup4
+srt==3.5.3
+    # via manim
 stack-data==0.6.3
     # via ipython
+svgelements==1.9.6
+    # via manim
 terminado==0.18.1
     # via jupyter-server
     # via jupyter-server-terminals
@@ -245,6 +305,8 @@ tornado==6.4.2
     # via jupyterlab
     # via notebook
     # via terminado
+tqdm==4.67.1
+    # via manim
 traitlets==5.14.3
     # via comm
     # via ipykernel
@@ -262,10 +324,13 @@ types-python-dateutil==2.9.0.20241206
     # via arrow
 typing-extensions==4.12.2
     # via beautifulsoup4
+    # via manim
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.3.0
     # via requests
+watchdog==6.0.0
+    # via manim
 wcwidth==0.2.13
     # via prompt-toolkit
 webcolors==24.11.1
